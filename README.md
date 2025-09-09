@@ -164,6 +164,7 @@ https://youtu.be/2fSqSAnRS5M
 
 ## Network Providers
 - [Mirror](https://github.com/MirrorNetworking/Mirror)
+- [Fish-Net](https://fish-networking.gitbook.io/docs)
 
 ## Missing Things
 
@@ -171,7 +172,6 @@ https://youtu.be/2fSqSAnRS5M
 - [Netcode for GameObjects](https://docs-multiplayer.unity3d.com/netcode/current/about/)
 - [LiteNetLib](https://github.com/RevenantX/LiteNetLib)
 - [LiteEntitySystem](https://github.com/RevenantX/LiteEntitySystem)
-- [Fish-Net](https://fish-networking.gitbook.io/docs)
 - [Dark Rift 2](https://github.com/DarkRiftNetworking/DarkRift)
 - [Unity WebRTC](https://github.com/Unity-Technologies/com.unity.webrtc)
 - [Photon Unity Networking 2](https://www.photonengine.com/pun)
