@@ -1,5 +1,4 @@
 #if NETICK
-
 using System;
 using System.Collections.Generic;
 using Netick.Unity;
