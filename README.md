@@ -165,6 +165,7 @@ https://youtu.be/2fSqSAnRS5M
 ## Network Providers
 - [Mirror](https://github.com/MirrorNetworking/Mirror)
 - [Fish-Net](https://fish-networking.gitbook.io/docs)
+- [Netick](https://github.com/NetickNetworking/NetickForUnity)
 
 ## Missing Things
 
