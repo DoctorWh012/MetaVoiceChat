@@ -2,7 +2,9 @@
 
 ## Supported Networking Solutions
 - [Mirror](https://github.com/MirrorNetworking/Mirror)
+- [Netcode for GameObjects](https://docs-multiplayer.unity3d.com/netcode/current/about/)
 - [FishNet](https://github.com/FirstGearGames/FishNet)
+- [Netick](https://github.com/NetickNetworking/NetickForUnity)
 
 Other Unity networking solutions can easily be implemented by composing an agnostic MonoBehaviour and implementing a minimal interface — please feel free to contribute additional network provider implementations. Please make PRs with any of your changes or improvements if you feel they would be helpful to the public. Please create issues for things as you see fit.
 
@@ -121,7 +123,7 @@ https://youtu.be/2fSqSAnRS5M
 4. Add your desired audio input, such as "VcMicAudioInput" to the game object.
 5. Likewise, add your desired audio output, such as "VcAudioSourceOutput" to the game object.
 6. Connect your audio input and output to the "MetaVc" fields.
-7. Lastly, add your desired network provider, such as <b>"MirrorNetProvider"</b> or <b>"FishNetNetProvider"</b> to the game object.
+7. Lastly, add your desired network provider, such as <b>"MirrorNetProvider"</b>, <b>"NgoNetProvider"</b>, <b>"FishNetNetProvider"</b>, or <b>"NetickNetProvider"</b> to the game object.
 8. It should look something like this now: ![TutorialA](Images/TutorialA.png)
     - All of these defaults should be okay, however you may want to decrease the "Complexity" field for games with many concurrently connected users or lower-end devices.
     - Remember to use "Max Codec Milliseconds" to ensure that your complexity value is not too high for your game.
@@ -164,13 +166,13 @@ https://youtu.be/2fSqSAnRS5M
 
 ## Network Providers
 - [Mirror](https://github.com/MirrorNetworking/Mirror)
+- [Netcode for GameObjects](https://docs-multiplayer.unity3d.com/netcode/current/about/)
 - [Fish-Net](https://fish-networking.gitbook.io/docs)
 - [Netick](https://github.com/NetickNetworking/NetickForUnity)
 
 ## Missing Things
 
 ### Missing Network Providers
-- [Netcode for GameObjects](https://docs-multiplayer.unity3d.com/netcode/current/about/)
 - [LiteNetLib](https://github.com/RevenantX/LiteNetLib)
 - [LiteEntitySystem](https://github.com/RevenantX/LiteEntitySystem)
 - [Dark Rift 2](https://github.com/DarkRiftNetworking/DarkRift)
@@ -196,7 +198,10 @@ https://youtu.be/2fSqSAnRS5M
 
 ### How do I write a network provider implementation?
 - Reference the [Mirror network provider implementation](NetProviders/Mirror/MirrorNetProvider.cs)
-- Also see the [FishNet network provider implementation](NetProviders/FishNet/FishNetNetProvider.cs) for another perspective
+- Here are some other perspectives:
+    - [FishNet network provider implementation](NetProviders/FishNet/FishNetNetProvider.cs)
+    - [NGO network provider implementation](NetProviders/NGO/NgoNetProvider.cs)
+    - [Netick network provider implementation](NetProviders/Netick/NetickNetProvider.cs)
 - For network solutions that do not have define symbols (i.e. Netcode for GameObjects), just make the PR with your own define symbol #if over each file. I will put a nested Unity package with a #define META_VOICE_CHAT_FOR_NGO script or whatever in the release so users can just double click the package to install the provider.
 - Just make a PR and I will check it out! Thanks!
 

@@ -1,3 +1,9 @@
+10/15/2025 (v4):
+- Netcode for GameObjects support by @ERisberg. Thank you so much!
+- Netick support by @Milk-Drinker01. Thank you so much!
+- [MulticastVcAudioOutput](Output/Multicast/MulticastVcAudioOutput.cs), an audio output that copies its audio to other audio outputs
+- README updates
+
 8/21/2025 (v3):
 - FishNet support by @maxkratt. Thank you so much!
 - Change Mirror implementation define symbol #if
